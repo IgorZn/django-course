@@ -19,8 +19,9 @@ from django.contrib import admin
 from first_app import views
 
 urlpatterns = [
-    url(r'^$', views.t_index, name='t_index'),
+    url(r'^$', views.index, name='index'),
     url(r'^help/', views.help, name='help'),
     url(r'^admin/', admin.site.urls),
+    url(r'^my_users/', views.my_users, name='my_users'),
     # url(r'^mynewextension/', include('first_app.urls')),
 ]
